@@ -1,0 +1,87 @@
+body{
+    border: 0px;
+    background-color: #455A64 !important;
+    transition: all 0.5s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor{
+    height: 600px;
+    width: 450px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    box-shadow: rgba(0,0,0,0.5) 2px 2px 2px;
+    padding:20px;
+    border-radius: 5px;
+}
+
+#elpassword{
+    margin-top: 200px;
+    position: absolute;
+    margin-left: 117px;
+}
+
+#elcorreo{
+    margin-top: 150px;
+    position: absolute;
+    margin-left: 117px;
+}
+
+input{
+    background-color: transparent;
+    border: 5px;
+    border-bottom: solid 1px gray;
+    padding: 5px;
+    display:table-row;
+    text-align: left !important;
+}
+
+
+#botonEntrar {
+    border: none;
+    background:#00BFA5;
+    color: #F2F2F2;
+    padding: 5px;
+    font-size: 17px;
+    position: relative;
+    top: 120px;
+    left: 60px;
+    width: 300px;
+    height: 45px;
+    transition: all 500ms ease;
+   }    
+#botonEntrar:hover{
+    background: transparent;
+    color: #00BFA5;
+    box-shadow: inset 0 0 0 3px #00BFA5;
+}
+
+#botonRegistro{
+    border: none;
+    background:purple;
+    color: #F2F2F2;
+    padding: 5px;
+    font-size: 17px;
+    position: relative;
+    top: 140px;
+    left: 60px;
+    width: 300px;
+    height: 45px;
+    transition: all 500ms ease;
+   }
+
+   #botonRegistro:hover{
+    background: transparent;
+    color: #00BFA5;
+    box-shadow: inset 0 0 0 3px #00BFA5;
+}
+
+#formulario{
+    position: relative;
+    top: 20px;
+}
+   
+   
+      
