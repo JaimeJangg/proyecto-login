@@ -11,17 +11,47 @@
 <body>
 
     <div class="contenedor centrado">
-        <input class="centrado" type="text" id="elcorreo" placeholder="Correo"/>
-        <input class="centrado" type="text" id="elcorreo2" placeholder="Valida tu Correo"/>
-        <input class="centrado" type="text" id="foto" placeholder="Link de tu foto"/>
-        <input class="centrado" type="text" id="gitHub" placeholder="GitHub"/>
-        <input class="centrado" type="text" id="musica" placeholder="Musica"/>
-        <input class="centrado" type="text" id="bio" placeholder="Bio"/>
-        <input class="centrado" type="password" id="elpassword1" placeholder="Contraseña"/>
-        <input class="centrado" type="password" id="elpassword2" placeholder="Valida tu Contraseña"/>
-        <button id="botonRegistro" onclick="login()">Registrar</button>
+           
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Nombre:</label>
+                        <input type="text" class="form-control" id="textoNombre"  placeholder="Tu nombre aqui">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Correo Electronico:</label>
+                        <input type="email" class="form-control" id="correo" placeholder=" Ejemplo: Efrain15@hotmail.com">
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Contraseña:</label>
+                        <input type="password" class="form-control" id="contraseña" placeholder="Pon aqui tu Contraseña">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="exampleInputPassword1"> Validacion de Contraseña:</label>
+                        <input type="password" class="form-control" id="contraseña2" placeholder="Pon de nuevo tu Contraseña">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">GitHub:</label>
+                        <input type="text" class="form-control" id="GitHub" placeholder="Pon tu usuario de GitHub">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">URL de tu foto:</label>
+                        <input type="text" class="form-control" id="Foto" placeholder="Pon aqui la URL">
+                    </div>
+                    
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Has leido terminos y condiciones</label>
+                    </div>
+                    
+                    <button id="botonRegistro" onclick="registrar()">Registrar</button>
+           
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="login.js"></script>
+    <script src="js/registro.js"></script>
 </body>
 </html>

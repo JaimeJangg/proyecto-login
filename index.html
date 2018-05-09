@@ -9,25 +9,30 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 </head>
 <body>
-
-    <div class="contenedor centrado">
-        <form id="formulario">
+  <div class="contenedor centrado">
+      <h1 id="Bienvenido">Bienvenido</h1>  
             <div class="form-group">
               <label for="exampleInputEmail1">Correo Electronico:</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Pon aqui tu correo">
               <small id="emailHelp" class="form-text text-muted"></small>
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Contraseña:</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Pon aqui tu Contraseña">
             </div>
             <div class="form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Recordar</label>
             </div>
-            <button id="botonEntrar" onclick="login()">Entrar</button>
-            <button id="botonRegistro" onclick="login()">Registrate</button>
-          </form>
+            <button id="botonEntrar">Entrar</button>
+            
+            
+              <button id="botonRegistro">
+                <a id="linkregistro" target="_self" href="registro.html">Registrate</a>
+              </button>
+            
+              
+            <p id="parrafo">Olvidaste tu contraseña?</p>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="login.js"></script>
