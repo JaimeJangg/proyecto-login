@@ -1,7 +1,6 @@
 function registrar() {
     if (validaCampos()) {
-        alert('todo chido, ahora que?');
-        //Mandas info al server
+        alert('Ahora puedes continuar');
         let losDatos = {
             'nombre': $('#textoNombre').val(),
             'github': $('#correo').val(),
@@ -13,8 +12,9 @@ function registrar() {
         $.post('https://cb-api-gdl.herokuapp.com/api/alumnos',losDatos)
             .done(function(respuesta){
                 console.log('done',respuesta)
+                location.href="index.html";
             }).fail(function(respuesta){
-                console.log('errrrrror',respuesta)
+                console.log('error',respuesta)
             });
 
     }
@@ -32,14 +32,14 @@ function validaCampos() {
                     let contraseña = $('#contraseña').val();
                     if (contraseña.length > 0) {
                         let contraseña2 = $('#contraseña2').val();
-                        if (contraseña2 == contraseña) {
+                        if (contraseña2 === contraseña) {
                             return true;
                         }
-                        else alert('he compa y la validacion de la contraseña?')
+                        else alert('he compa y la validacion de la contraseña?');
                     }
-                    else aletrt('eh compa y la contraseña?')
+                    else aletrt('eh compa y la contraseña?');
                 }
-                else alert('eh compa y la foto que?')
+                else alert('eh compa y la foto que?');
             }
             else alert('eh compra y el github que?');
         }
